@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>计分页面</title>
+    <style>
+        body{
+            /* width: 1000px; */
+            height: 1000px;
+
+        }
+        .header {
+             background-color: #F1F1F1;
+             text-align: center;
+             padding: 20px;
+        }
+        .control{
+             position: absolute;
+             top: 140px;
+             left: 70px;
+        }
+        .button{
+            width: 100px;
+            height: 40px;
+            margin: 5px;
+            margin-left: 50px;
+            margin-top: 40px;
+        }
+        .video{
+            position: absolute;
+            width: 700px;
+            height: 395px;
+            top:130px;
+            right: 290px;
+            border: 2px solid #73AD21;
+        }
+        .all{
+            position: absolute;
+            left: 1000px;
+        }
+        .out{
+            margin-top: 60px;
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">考试页面</h1>
+ <div>
+    <video src="https://ak.picdn.net/shutterstock/videos/1037437067/preview/stock-footage-growing-plants-in-spring-timelapse-sprouts-germination-newborn-cress-salad-plant-in-greenhouse.mp4"  class="video" id="video1" ></video>
+    <canvas class="video" id="canvas"></canvas>
+    <p id="txt"></p>
+   
+</div>
+<div class="control">
+    <button class="button" id="draw">计分区域校正</button><br>
+    <button class="button" id="start">开始考试</button><br>
+    <button class="button" id="end">考试结束</button> <br> 
+    <button class="button" id="back">成绩回放</button><br/>
+</div>
+
+    <div class="all">
+       <big> 本次得分：</big><input class="out" type="text" readonly="readonly" id="now"> <br>
+       <big> 累计进球：</big><input class="out" type="text" readonly="readonly" id="scroll"> <br>
+       <big> 累计得分：</big><input class="out" type="text" readonly="readonly" id="grade"> <br>
+     
+    </div>
+</body>
+<script src="page2.js"></script>
+</html>
